@@ -29,7 +29,9 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t lagx2/docker-graphql:0.0.2  .
+        docker build -t lagx2/docker-graphql:latest  .
 
     - name: Push Docker Image
       run: |
         docker push lagx2/docker-graphql:0.0.2
+        docker push lagx2/docker-graphql:latest
